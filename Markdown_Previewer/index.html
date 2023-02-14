@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkDown Previewer</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <div id="editorWrapper">
+        <div class="toolbar">
+            <span>Editor</span>
+            <span class="fa fa-arrow-alt"></span>
+        </div>
+        <textarea id="editor" name="editor">
+            # Welcome to my React Markdown Previewer!
+
+            ## This is a sub-heading...
+            ### And here's some other cool stuff:
+        </textarea>
+    </div>
+    <div id="previewWrapper">
+        <div class="toolbar">
+            <span>Previewer</span>
+            <span class="fa fa-arrow-alt"></span>
+        </div>
+        <textarea id="preview" name="preview"></textarea>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.9/marked.min.js" integrity="sha512-tx1vMWTUWcfIhVCLE/CiM1dozlGTP5rXHp5kviJZL8xdKlu+9OIx7caHeK50U3Tc+8iuQnGdOJ4s9/SjNsfdZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
+</body>
+</html>
