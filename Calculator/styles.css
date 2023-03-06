@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background-color: #c2c2d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    min-width:300px;
+    min-height:300px;
+    background-color: black;
+    padding:10px;
+}
+#formalview{
+    min-height:20px;
+    text-align: right;
+    color:orange;
+    font-family:digital;
+}
+#display{
+    min-height:35px;
+    color:white;
+    text-align: right;
+    font-size:2rem;
+    font-family:"digital";
+}
+#grid button{
+    min-width:80px;
+    min-height:65px;
+    background-color: #4D4D4D;
+    color:white;
+    cursor:pointer;
+    font-family: 'Share Tech Mono', monospace;
+}
+#grid{
+    display: grid;
+    grid-template:repeat(5,1fr)/repeat(4,1fr);
+}
+#clear{
+    grid-column: 1/span 2;
+    background-color: brown !important;
+    color:white;
+}
+.lightgray{
+    background-color: rgb(102,102,102) !important;
+}
+#zero{
+    grid-column: 1/span 2;
+}
+#equals{
+    grid-column:4;
+    grid-row:4/span 2;
+}
+#grid button:hover{
+    background-color: orange;
+    border:0.5px solid white;
+    z-index:3;
+}
+

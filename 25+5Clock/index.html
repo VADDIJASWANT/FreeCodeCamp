@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>25+5 Clock</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="heading">25+5 Clock</h1>
+        <div id="TimeManagment">
+            <div id="breakTimeManagment">
+                <h2 id="break-label">Break Leangth</h2>
+                <div class="managmentcontrols">
+                    <span id="break-decrement" class="fa fa-arrow-down"></span>
+                    <span id="break-length" class="orange">5</span>
+                    <span id="break-increment" class="fa fa-arrow-up"></span>            
+                </div>
+            </div>
+            <div id="sessionTimeManagment">
+                <h2 id="session-label">Session Length</h2>
+                <div class="managmentcontrols">
+                    <span id="session-decrement" class="fa fa-arrow-down"></span>
+                    <span id="session-length" class="orange">25</span>
+                    <span id="session-increment" class="fa fa-arrow-up"></span>
+                </div>
+            </div>
+        </div>
+        <div id="timer">
+            <h2 id="timer-label">Session</h2>
+            <span id="time-left">25:00</span>
+        </div>
+        <div id="timer-adjustments">
+            <div id="start_stop">
+                <span class="fa fa-play">
+                </span>
+                <span class="fa fa-pause"></span>
+            </div>
+            
+            <span class="fa fa-refresh" id="reset">
+            </span>
+        </div>      
+    </div>
+    <audio id="beep" src="./Sounds/htcalarm.mp3"></audio>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+</body>
+</html>

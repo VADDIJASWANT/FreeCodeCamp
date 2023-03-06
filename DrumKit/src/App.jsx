@@ -21,8 +21,7 @@ function App() {
     console.log(button)
     if (button) {
       document.getElementById(button.content).play();
-      const fileName = button.src.split("/").pop().replace(".mp3", ""); // Extract file name from src string
-      document.getElementById("display").innerText = fileName;
+      document.getElementById("display").innerText = button.name;
     }
   };
 
@@ -35,15 +34,15 @@ function App() {
   });
 
   
-  let buttons = [  { content: "Q", src: Heater1 },
-                    { content: "W", src: Heater2 },
-                    { content: "E", src: Heater3 },
-                    { content: "A", src: Heater4 },
-                    { content: "S", src: Clap },
-                    { content: "D", src: OpenHH },
-                    { content: "Z", src: KickNHat },
-                    { content: "X", src: KICK },
-                    { content: "C", src: ClosedHH }]
+  let buttons = [  { content: "Q", src: Heater1, name: "Heater 1" },
+                    { content: "W", src: Heater2,name: "Heater 2" }, 
+                    { content: "E", src: Heater3,name: "Heater 3" },
+                    { content: "A", src: Heater4,name: "Heater 4" },
+                    { content: "S", src: Clap,name: "Clap"  },
+                    { content: "D", src: OpenHH ,name: "OpenHH " },
+                    { content: "Z", src: KickNHat ,name: "KickNHat" },
+                    { content: "X", src: KICK ,name: "KICK" },
+                    { content: "C", src: ClosedHH,name: "ClosedHH"  }]
 
 
   let drumIcons = buttons.map((button)=>(
@@ -52,6 +51,7 @@ function App() {
       id={button.content}
       content={button.content}
       src={button.src}
+      name={button.name}
     />
   ))
   return (
@@ -59,7 +59,7 @@ function App() {
       <div className='DrumIcons'>
         {drumIcons}
       </div>
-      <div id="display">test</div>
+      <div id="display"></div>
 
     </div>
   )

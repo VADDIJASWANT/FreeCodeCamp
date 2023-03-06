@@ -1,0 +1,66 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: DIN;
+    background-color: black;
+    color: white;
+    height:100vh;    
+}
+.wrapper{
+    width:500px;
+}
+.heading{
+    text-align: center;
+}
+#TimeManagment{
+    display: flex;
+    justify-content: space-between;
+}
+.managmentcontrols{
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    color:rgb(192, 249, 249);
+    font-size: 1.5rem;
+}
+.orange{
+    color:orange;
+}
+#time-left{
+    margin-top:10px;
+    font-size:3rem;
+}
+
+#timer{
+    margin:20px auto 0px auto;
+    padding:20px;
+    text-align: center;
+    width:50%;
+    border:1.5px solid rgb(178, 178, 178);
+    border-radius:10px;
+}
+#timer-adjustments{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    font-size:1.2rem;
+}
+#start_stop{
+    margin-right:10px;
+    color:rgb(186, 253, 84);
+}
+#reset{
+    color:rgb(252, 223, 2);
+}
+.red{
+    color:red !important;
+}
+
