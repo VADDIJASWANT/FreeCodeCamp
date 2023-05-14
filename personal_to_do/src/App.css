@@ -1,0 +1,100 @@
+.Header{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height:50px;
+    background-color: #f6d33a;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    font-size: 2em;
+}
+
+.Navbar{
+    display: flex;
+    height:50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #428bca;
+    font-size: 2em;
+    color:white;
+}
+.Navbar-heading{
+    margin-left:45px;
+}
+.categorie-addition{
+    margin-right:45px;
+    cursor:pointer;
+}
+.new_category{
+    height:50px;
+    width:100%;
+    background-color: #428bca;
+    border-top:1px solid white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 2em;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+    overflow: hidden;
+}
+.show {
+    height: 50px;
+    transform: translateY(0%);
+}
+
+.hide {
+    height: 0;
+    transform: translateY(-100%);
+}
+.Name_of_category::placeholder {
+    color: white;
+}
+
+.Name_of_category:focus {
+    outline: none;
+    border: none;
+}
+
+.Name_of_category{
+    border:none;
+    background-color: #428bca;
+    color:white !important;
+    width:72%;
+    font-size: 1em;
+}
+.new_Category_button{
+    border:none;
+    background-color:#428bca;
+    color:white;
+    font-weight: bold;
+}
+.circle_ellipses{
+    color:#f6d33a;
+}
+.Categorie{
+    height:50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+.category_name{
+    border:none;
+    width:72%;
+    font-size: 1.5em;
+}
+.category_name::placeholder {
+    color: white;
+}
+
+.category_name:focus {
+    outline: none;
+    border: none;
+}
+.trash_icon{
+    margin-right:10px;
+}
+

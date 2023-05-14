@@ -1,11 +1,12 @@
-function convertMarked(text){
-    $("#preview").html(text)
+function convertMarked(){
+    let editorText = $("#editor").val();
+    let markedText = marked.parse(editorText,{ breaks: true });//.replace(/\s+/g, '')
+    document.getElementById("preview").innerHTML = markedText;
 }
 
 $(document).ready(function() {
-    convertMarked(marked($("#editor").val()))
-    $("#editor").on("input", function(e) {
-        convertMarked(marked($("#editor").val()))
+    convertMarked()
+    $("#editor").on("keyup", function() {
+        convertMarked()
     })
-
-});
+})
